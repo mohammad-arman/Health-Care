@@ -1,0 +1,14 @@
+.service-title{
+    color: #0e204d;
+}
+.service-btn{
+    background-color: #0e204d;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+.service-btn:hover{
+    background-color: #21cdc0;
+}

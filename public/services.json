@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Hematology",
+      "description": "Hematology is the branch of medicine concerned with the study of the cause, prognosis, treatment, and prevention of diseases related to blood.The laboratory analysis of blood is frequently performed by a medical technologist or medical laboratory scientist.",
+      "img": "https://i.ibb.co/CQLcrtd/hemathology.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Neurology",
+      "description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.",
+      "img": "https://i.ibb.co/Pcph0sc/neurology.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Gestroenterology",
+      "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality. Physicians practicing in this field are called gastroenterologists.",
+      "img": "https://i.ibb.co/rfVt2m1/gastroenterology.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pulmonology",
+      "description": "Pulmonology or pneumology is a medical specialty that deals with diseases involving the respiratory tract. It is also known as respirology, respiratory medicine, or chest medicine in some countries and areas. Pulmonology is considered a branch of internal medicine, and is related to intensive care medicine.",
+      "img": "https://i.ibb.co/Kqp3kTd/pulmonology.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cardiologoy",
+      "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology",
+      "img": "https://i.ibb.co/j6w9VM6/cardiology.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Ophthomology",
+      "description": "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye. An ophthalmologist is a physician who specializes in ophthalmology. The credentials include a degree in medicine, followed by additional four to five years of residency training in ophthalmology. ",
+      "img": "https://i.ibb.co/mywjC9s/ophthalmology.jpg"
+    }
+  ]

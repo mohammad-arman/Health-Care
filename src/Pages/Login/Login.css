@@ -1,0 +1,25 @@
+.login-part{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 50%;
+}
+.login-part input{
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+.login-btn{
+    padding: 10px 30px;
+    background-color: #283b6a;
+    letter-spacing: 1px;
+}
+
+/* responsive login */
+@media only screen and (max-width: 780px) {
+    .login-part{
+        max-width: 100%;
+    }
+  }

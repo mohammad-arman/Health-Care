@@ -1,0 +1,19 @@
+.about-section-title{
+    max-width: 60%;
+    font-weight: 700;
+    color: #0e204d;
+    font-size: 2.5em;
+}
+.about-part p{
+    color: #283b6a;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* responsive about */
+@media only screen and (max-width: 780px) {
+    .about-section-title{
+        max-width: 100%;
+        font-size: 2em;
+    }
+  }
