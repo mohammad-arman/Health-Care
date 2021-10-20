@@ -45,6 +45,7 @@ const useFirebase = () => {
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
+
 //handle Registration form
 const handleRegistation = e => {
     e.preventDefault();
@@ -86,18 +87,22 @@ const proccessLogin = (email, password) => {
      updateProfile(auth.currentUser, {displayName: name})
      .then(result=>{})
  }
+
 //email handle
 const handdleEmailChange = e =>{
     setEmail(e.target.value);
 }
+
 //password handle
 const handlePasswordChange = e => {
     setPassword(e.target.value);
 }
+
 //user name handle
 const handleNameChange = e => {
     setName(e.target.value);
 }
+
 //toggle login and resigter
 const toggleLogin = e => {
     setIsLogIn(e.target.checked)

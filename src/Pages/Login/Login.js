@@ -5,11 +5,10 @@ import { useLocation, useHistory } from 'react-router';
 
 const Login = () => {
     const {googleSignIn, handleRegistation, handdleEmailChange, handlePasswordChange,error, toggleLogin, isLogIn, handleNameChange,setUser} = useAuth()
-    
 
+    //redirect initial page after login
     const location = useLocation();
     const history = useHistory();
-
     const handleGoogleSignIn = () => {
         googleSignIn()
         .then(result=> {
