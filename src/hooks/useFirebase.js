@@ -15,10 +15,7 @@ const useFirebase = () => {
     //Google Sign in
     const googleSignIn = () => {
         setIsLoading(true)
-        signInWithPopup(auth, googleProvider)
-        .then(result=> {
-            setUser(result.user)
-        })
+        return signInWithPopup(auth, googleProvider)
         .catch(error=>{
             setError(error.message);
         })
@@ -63,7 +60,7 @@ const createNewUser = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
     .then(result => {
         const user = result.user;
-        setUser(user); //
+        setUser(user);
         setError('');
         setUserName();
     })
@@ -76,7 +73,7 @@ const proccessLogin = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
     .then(result=> {
         const user = result.user;
-        setUser(user); //
+        setUser(user); 
         setError('');
     })
     .catch(error=>{
@@ -107,6 +104,7 @@ const toggleLogin = e => {
 }
     return{
         user,
+        setUser,
         error,
         googleSignIn,
         logOut,

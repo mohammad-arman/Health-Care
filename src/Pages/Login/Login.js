@@ -1,9 +1,23 @@
 import React from 'react';
 import './Login.css';
 import useAuth from '../../hooks/useAuth';
+import { useLocation, useHistory } from 'react-router';
 
 const Login = () => {
-    const {googleSignIn, handleRegistation, handdleEmailChange, handlePasswordChange,error, toggleLogin, isLogIn, handleNameChange} = useAuth()
+    const {googleSignIn, handleRegistation, handdleEmailChange, handlePasswordChange,error, toggleLogin, isLogIn, handleNameChange,setUser} = useAuth()
+    
+
+    const location = useLocation();
+    const history = useHistory();
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+        .then(result=> {
+            history.push(location.state?.from || '/home') 
+            setUser(result.user)
+        })
+    };
+    
     return (
         <div className="py-5">
             <div className="login-part mx-auto">
@@ -32,7 +46,7 @@ const Login = () => {
                 </form>
                 <div className="text-center">
                     <p>or use of this option</p>
-                    <button onClick={googleSignIn} className="btn btn-primary">Google SignIn</button>
+                    <button onClick={handleGoogleSignIn} className="btn btn-primary">Google SignIn</button>
                 </div>
             </div>  
         </div>
